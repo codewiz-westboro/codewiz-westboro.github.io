@@ -3,9 +3,32 @@
 <!-- THIS IS WHERE OUR PROJECTS WILL LIVEEEEEEEEEEEE -->
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" width="device-width">
   <title>Codewiz AR Final</title>
+  <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
 </head>
 <body>
+  <a-scene embedded arjs>
+  	<a-marker preset="custom" type="pattern" url="https://https://raw.githubusercontent.com/codewiz-westboro/codewiz-westboro.github.io/master/pattern-marker.patt" id="myMarker">
+      <a-dodecahedron position='0 0.5 0' material='color: white; opacity: 0.9;'></a-dodecahedron>
+  	</a-marker>
+    <a-marker preset="hiro" id="hiroMarker">
+      <a-text
+              value="Hiro! Wee"
+              position="1.0 0.50 0"
+              rotation="270 0 0"></a-text>
+    </a-marker>
+    <a-marker preset="kanji" id="kMarker>
+      <a-text
+              value="Kanji time!"
+              position="0.5 0.5 0"
+              rotation="270 0 0">
+      </a-text>
+    </a-marker>
+ 	  <a-entity camera></a-entity>
+   </a-scene>
   <h1>Hi You Guys!</h1>
 </body>
 
